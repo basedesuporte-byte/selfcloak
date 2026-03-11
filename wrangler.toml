@@ -1,0 +1,20 @@
+name = "selfcloak"
+main = "_worker.js"
+compatibility_date = "2025-01-01"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "bfebe0f945f1443a8799a525d8d06cb6"
+
+[vars]
+# ─── Required Variables ─────────────────────────────
+# Generate a random string (e.g., UUID) and paste it here. It's used to sign login sessions.
+SECRET = "jh23b4234hbj"
+PROJECT_NAME = "selfcloak"
+
+# ─── D1 Database ──────────────────
+# Storing logs and selfpage files
+[[d1_databases]]
+binding = "DB"
+database_name = "selfcloak_db"
+database_id = "4ebe367a-b0b8-4687-a6af-c5b754c90bab"
